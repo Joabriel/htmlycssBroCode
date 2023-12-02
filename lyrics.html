@@ -12,36 +12,49 @@
                 /*white-space: nowrap; //Para evitar que la imagen quite de su bloque al texto.*/
             }
             .Adjuntar{
-            display: flex; /*Es lo mismo que 'displaay inline-block'.*/
+            display: flex; /*Es lo mismo que 'displaay inline-block'./ Ambos son para que los elementos dejen de ser de bloques*/
             }
             .h1_p{
                 flex-direction: colum; /*Premite que un texto esté debajo del otro, evitando ser afectados por 'displaay fleex'*/
                 margin-left: 30px;
             }
+
+            audio{
+                width: 250px;
+                height: 20px;
+                margin-left: -400px;
+                display: inline-block;
+                margin-top: 64px;
+            }
+            
+            body{
+                background-color: lightgrey;
+            }
         </style>
     </head>
     <body>
     <br><br>
-        <div class="todo">
+    <div class="todo">
         <div class="Adjuntar"><!--Sirve para que la imagen y el texto estén en la misma linea-->
-        <a href="https://i1.sndcdn.com/artworks-vG6yfLjAygbvrC0t-5JNK7g-t500x500.jpg" title="Cyberpunk Edgerunners">
-        <img src="https://i1.sndcdn.com/artworks-vG6yfLjAygbvrC0t-5JNK7g-t500x500.jpg" alt="Cyberpunk Edgerunners">
-        </a>
-        <div class="h1_p">
-        <!--(Arriba, Derecha, Abajo, Izquierda). -->
-        <!--Este margen es para juntar mas el h1 con p.-->
-        <h1 style="margin-bottom: -10px;">I Really Want to Stay at Your House</h1>
-        <p>Canción</p>
-        </div>
-        </div>
+            <a href="https://i1.sndcdn.com/artworks-vG6yfLjAygbvrC0t-5JNK7g-t500x500.jpg" title="Cyberpunk Edgerunners">
+                <img src="https://i1.sndcdn.com/artworks-vG6yfLjAygbvrC0t-5JNK7g-t500x500.jpg" alt="Cyberpunk Edgerunners">
+            </a>
+            <div class="h1_p">
+                <!--(Arriba, Derecha, Abajo, Izquierda). -->
+                <!--Este margen es para juntar mas el h1 con p.-->
+                <h1 style="margin-bottom: -10px;">I Really Want to Stay at Your House</h1>
+                <p style="white-space: nowrap">Canción</p>
+            </div>
+            <!--El Audio solo es visible con la propiedad "controls" al parecer-->
+            <audio controls src="Multimedia/I Really Want To Stay At Your House.mp3"></audio>
+            </div>
         </div>
         <br>
         <!--Este margen es para subir el hr para acercarlo al título e imágen.-->
         <hr style="margin-top: -10px; margin-bottom: 2.5px"> 
         <div class="todo">
-        <br>
-        <h3>Letras</h3>
-        <pre>
+            <h3>Letras</h3>
+            <pre>
 I couldn't wait for you to come and clear the cupboard
 But now you're gone and leaving nothing but a sign
 Another evening I'll be sitting reading in between your lines
@@ -98,10 +111,10 @@ And I hope it all works out
 But you know how much you broke me apart
 I'm done with you, I'm ignoring you
 I don't wanna know
-        </pre>
-        <h5>Fuente: <a href="https://www.musixmatch.com/es" target="_balnk">Musixmatch<u></u></h5></a> 
-        <h5>Compositores: Rosa Walton</h5>
-        <h5>Letra de I Really Want to Stay at Your House © Blue Raincoat Songs Limited</h5>
-    </div>
-    </body>
+</pre>
+<h5>Fuente: <a href="https://www.musixmatch.com/es" target="_balnk">Musixmatch<u></u></h5></a> 
+<h5>Compositores: Rosa Walton</h5>
+<h5>Letra de I Really Want to Stay at Your House © Blue Raincoat Songs Limited</h5>
+</div>
+</body>
 </html>
